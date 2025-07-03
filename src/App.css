@@ -1,0 +1,48 @@
+/* used for start page */
+.startpage-container {
+    display: flex;
+    justify-content: center; /* centers elements horizontally */
+    align-items: top; /* centers elements vertically */
+    min-height: 100vh; /* ensures that the container has full height of the viewports */
+    flex-direction: row; /* order of elements: text first, then image */
+}
+
+.text-container {
+    text-align: left; /* text is left-aligned */
+    margin-right: 20px; /* distance between text and image */
+}
+
+.startpage-image {
+    width: 250px;
+    height: auto;
+}
+
+/* used for tasks page */
+th {
+    font-size: 1rem; /* 1rem is usually equal to 16px by default */
+  }
+
+td {
+    font-size: 1rem; /* 1rem is usually equal to 16px by default */
+  }
+
+/* app container uses flexbox to allow the footer to stay at the bottom */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* ensures the footer will be at the bottom of the page */
+}
+  
+/* main content area takes available space */
+.main-content {
+    flex-grow: 1; /* makes the content fill the available space */
+    padding: 20px; /* optional padding for content */
+}
+  
+/* footer styling */
+.footer {
+    background-color: black;
+    color: grey;
+    text-align: center;
+    padding: 20px;
+}
